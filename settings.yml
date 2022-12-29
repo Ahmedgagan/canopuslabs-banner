@@ -1,0 +1,35 @@
+hide_on_mobile:
+  default: false
+banner_background_color:
+  type: string
+  default: "var(--tertiary-low)"
+banner_background_gradient:
+  type: string
+  default: "linear-gradient(180deg, var(--tertiary-low) 55%, var(--secondary) 45%)"
+banner_box_background_color:
+  type: string
+  default: "var(--secondary)"
+banner_box_text_color:
+  type: string
+  default: "var(--primary)"
+banner_box_link_color:
+  type: string
+  default: "var(--tertiary)"
+banner_box_button_color:
+  type: string
+  default: "var(--tertiary)"
+banner_box_button_text_color:
+  type: string
+  default: "var(--secondary)"
+show_on:
+  default: discovery
+  type: enum
+  choices:
+    - discovery
+    - homepage
+    - all
+  description: discovery refers to topic list pages
+banner_links:
+  default: >-
+    [{"title":"Discourse Customization","description":"With supporting text below as a natural lead-in to additional content. A small river named Duden flows by their place and supplies it with necessary regelialia.","url":"/faq", "url_title":"Go Somewhere"}]
+  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "description": { "type": "string", "minLength": 1 }, "url": { "type": "string" }, "url_title": { "type": "string" }}, "additionalProperties": false } }'

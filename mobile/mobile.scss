@@ -1,0 +1,40 @@
+.canopus-labs-banner-connector {
+  background-image: none;
+}
+.canopus-labs-banner {
+  .canopus-labs-banner-content-area {
+    .canopus-labs-banner-introduction {
+      margin: 20px 10px 0 10px;
+      flex-direction: column;
+      box-shadow: 0 0 5px #7e7e7e;
+      .canopus-labs-banner-introduction-branding {
+        width: 100%;
+        border-bottom: 1px solid var(--primary-low);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .canopus-labs-banner-introduction-portfolio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    .canopus-labs-banner-cards {
+      grid-template-columns: 1fr;
+      padding-top: 20px;
+
+      .canopus-labs-banner-card {
+        box-shadow: 0 0 5px #7e7e7e;
+      }
+    }
+  }
+}

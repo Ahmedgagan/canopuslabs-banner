@@ -1,0 +1,25 @@
+
+{{#unless (and (theme-setting 'hide_on_mobile') site.mobileView)}}
+  {{#if showHere}}
+    <div class="canopus-labs-banner wrap">
+      <div class="canopus-labs-banner-content-area">
+        <div class="canopus-labs-banner-introduction">
+          <div class="canopus-labs-banner-introduction-branding">
+            {{mount-widget widget="home-logo" class="site-logo"}}
+            <h4>{{html-safe (theme-i18n "canopuslabs_banner.tagline")}}</h4>
+          </div>
+          <div class="canopus-labs-banner-introduction-portfolio">
+            <h2>{{html-safe (theme-i18n "canopuslabs_banner.welcome")}}</h2>
+            <p>{{html-safe (theme-i18n "canopuslabs_banner.subtitle")}}</p>
+            {{html-safe (theme-i18n "canopuslabs_banner.link")}}
+          </div>
+        </div>
+        <div class="canopus-labs-banner-cards">
+          {{#each bannerLinks as |bl|}}
+            {{canopus-labs-banner-card args=bl}}  
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+{{/unless}}

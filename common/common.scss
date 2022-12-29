@@ -1,0 +1,100 @@
+.canopus-labs-banner-connector {
+  background-color: #{$banner_background_color};
+  background-image: #{$banner_background_gradient};
+}
+.canopus-labs-banner {
+  .canopus-labs-banner-content-area {
+    .canopus-labs-banner-introduction {
+      margin: 60px 10px 10px 10px;
+      background-color: #{$banner_box_background_color};
+      border-radius: 8px;
+      box-shadow: 0 0 10px #8888887c;
+      padding: 2em 1.5em;
+      display: flex;
+
+      .canopus-labs-banner-introduction-branding {
+        width: 35%;
+        .site-logo img {
+          height: 70px;
+        }
+      }
+
+      .canopus-labs-banner-introduction-portfolio {
+        width: 65%;
+        color: #{$banner_box_text_color};
+
+        a {
+          color: #{$banner_box_link_color};
+        }
+      }
+    }
+    .canopus-labs-banner-cards {
+      padding: 30px 10px 20px 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px 40px;
+      .canopus-labs-banner-card {
+        background-color: #{$banner_box_background_color};
+        border-radius: 8px;
+        box-shadow: 0 0 10px #8888887c;
+        padding: 2em 1.5em;
+        display: block;
+        .canopus-labs-banner-card-icon {
+          display: flex;
+          margin-bottom: 1em;
+          .canopus-labs-banner-card-circle {
+            height: 35px;
+            width: 35px;
+            border-radius: 50px;
+            border: 3px solid lightblue;
+            background-color: rgba(32, 93, 178, 0.681);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+            .canopus-labs-banner-card-center-circle {
+              height: 8px;
+              width: 8px;
+              border-radius: 30px;
+              border: 1px solid rgb(208, 226, 233);
+              background-color: rgba(32, 93, 178, 0.681);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+  
+              .canopus-labs-banner-card-center {
+                height: 5px;
+                width: 5px;
+                border-radius: 2px;
+                background-color: rgb(231, 235, 237);
+              }
+            }
+          }
+        }
+
+        .canopus-labs-banner-card-title {
+          margin-bottom: 1em;
+          color: #{$banner_box_text_color};
+        }
+
+        .canopus-labs-banner-card-description {
+          margin-bottom: 1em;
+          color: #{$banner_box_text_color};
+
+          span {
+            line-height: 25px;
+            color: #{$banner_box_text_color};
+          }
+        }
+
+        .canopus-labs-banner-card-link a {
+          border-radius: 4px;
+          padding: 16px 24px;
+          display: inline-block;
+          background-color: #{$banner_box_button_color};
+          color: #{$banner_box_button_text_color};
+        }
+      }
+    }
+  }
+}

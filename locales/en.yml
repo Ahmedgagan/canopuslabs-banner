@@ -1,0 +1,8 @@
+en:
+  theme_metadata:
+    description: "Site Banner for Canopus Labs Theme"
+  canopuslabs_banner:
+    tagline: We make websites come alive.
+    welcome: Welcome to our community!
+    subtitle: We provide powerful Solutions & Professional Support for Discourse Communities and WordPress based eCommerce Businesses.
+    link: <a href="">Our Portfolio ></a>
